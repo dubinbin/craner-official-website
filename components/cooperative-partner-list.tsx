@@ -1,5 +1,6 @@
 import { partnerList } from "@/constants";
 import styles from "@/styles/cooperative.module.css";
+import { LazyImage } from "./lazy-image";
 
 export const CooperativePartner = () => {
   return (
@@ -13,7 +14,7 @@ export const CooperativePartner = () => {
           >
             {partnerList.map((item, idx2) => (
               <a href="" className={styles.reviews_card} key={idx2}>
-                <img className="h-8 md:h-8 mr-2" src={item.url} alt="" />
+                <LazyImage className="h-8 md:h-8 mr-2" src={item.url} alt="" />
               </a>
             ))}
           </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "next-export-i18n";
 import { useRouter } from "next/router";
 import { socialNetworks } from "@/scripts/utils";
+import { LazyImage } from "./lazy-image";
 
 import { LanguageSwitcher } from "./language-switcher";
 
@@ -20,6 +21,7 @@ export const Footer = () => {
           alt="Logo"
           width={450}
           height={50}
+          loading="lazy"
         />
         <div className="footer-left flex w-[95%] lg:w-auto flex-col items-start justify-start pl-6 md:pl-24">
           <Image
@@ -28,6 +30,7 @@ export const Footer = () => {
             alt="Logo"
             width={180}
             height={56}
+            loading="lazy"
           />
 
           <div className="flex flex-col text-xs text-left gap-1 text-black">
@@ -62,7 +65,7 @@ export const Footer = () => {
                   style={{ color: "black" }}
                 >
                   <a href={el.link ? el.link : el.qrcode} target="_blank">
-                    <img
+                    <LazyImage
                       src={el.path}
                       alt={el.name}
                       className="w-full h-full text-black"

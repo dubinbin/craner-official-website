@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "next-export-i18n";
 import { motion, AnimatePresence } from "framer-motion";
 import { MotionRevealUp } from "./animated-text";
+import { LazyImage } from "./lazy-image";
 
 const partners = [
   "CraneR AI Safety System",
@@ -20,8 +21,7 @@ export const BusinessSwiper = () => {
     switch (partner) {
       case "CraneR AI Safety System":
         return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <LazyImage
             src={`/img/business-swiper/safe.jpg`}
             alt={partner}
             className="object-cover"
@@ -29,8 +29,7 @@ export const BusinessSwiper = () => {
         );
       case "Safety Supervision System":
         return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <LazyImage
             src={`/img/business-swiper/dwss.jpg`}
             alt={partner}
             className="object-cover"
@@ -38,8 +37,7 @@ export const BusinessSwiper = () => {
         );
       case "AI Crane Control System":
         return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <LazyImage
             src={`/img/business-swiper/route.jpg`}
             alt={partner}
             className="object-cover"
@@ -47,8 +45,7 @@ export const BusinessSwiper = () => {
         );
       case "4S : Site Safety System":
         return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <LazyImage
             src={`/img/business-swiper/smartwatch.jpg`}
             alt={partner}
             className="object-cover"
@@ -56,8 +53,7 @@ export const BusinessSwiper = () => {
         );
       default:
         return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <LazyImage
             src={`/img/business-swiper/safe.jpg`}
             alt={partner}
             className="object-cover"

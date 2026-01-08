@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { LazyImage } from "./lazy-image";
 
 interface ParallaxSectionProps {
   imageSrc: string;
@@ -45,7 +46,7 @@ export function ParallaxSection({
         style={{ y: imageY }}
         className="absolute inset-0 w-full flex items-center justify-center"
       >
-        <img
+        <LazyImage
           src={imageSrc}
           alt="parallax background"
           className="w-full object-cover filter contrast-75 brightness-55"

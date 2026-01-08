@@ -66,6 +66,7 @@ export const StackedCardCarousel: React.FC<StackedCarouselProps> = ({
                       src={img.src}
                       alt={img.alt}
                       fill
+                      loading="lazy"
                       className="object-contain p-4" // 增加内边距避免边缘贴合
                     />
                   </div>

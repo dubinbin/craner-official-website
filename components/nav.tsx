@@ -45,6 +45,7 @@ export const Nav = () => {
                 alt="Logo"
                 width={160}
                 height={46}
+                priority
               />
             </MotionRevealUp>
             <div className="flex-1"></div>

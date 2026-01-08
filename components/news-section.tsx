@@ -2,6 +2,7 @@ import { useTranslation } from "next-export-i18n";
 import { TextBlockRow, TextGradient, getTextGradientStyle } from "./text-block";
 import styles from "@/styles/cooperative.module.css";
 import { MotionRevealUp } from "./animated-text";
+import { LazyImage } from "./lazy-image";
 
 const subtitleGradient1: TextGradient = {
   deg: 180,
@@ -54,7 +55,7 @@ export const NewsSection = () => {
               {/* Image - Right Side */}
               <div className="md:w-2/5 order-1 md:order-2 overflow-hidden">
                 <div className="w-full h-full aspect-[16/9] md:aspect-auto">
-                  <img
+                  <LazyImage
                     src="./img/news/new01_cover.jpg"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     alt="news 1"
@@ -91,7 +92,7 @@ export const NewsSection = () => {
               {/* Image - Right Side */}
               <div className="md:w-2/5 order-1 md:order-2 overflow-hidden">
                 <div className="w-full h-full aspect-[16/9] md:aspect-auto">
-                  <img
+                  <LazyImage
                     src="./img/news/new02_cover.jpeg"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     alt="news 2"
