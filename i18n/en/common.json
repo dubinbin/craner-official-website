@@ -12,7 +12,12 @@
     "company_name": "CraneR Technology Co., Ltd.",
     "address": "Company Address (Mainland China): Shenzhen Qianhai Shengang Cooperation Zone, Nan Shan Street, Meng Hai Avenue 5188, Qianhai Shengang Youth Dream Factory North Area L Building 202",
     "address2": "Company Address (Hong Kong): 17w, Hong Kong Science Park, New Territories, Hong Kong",
-    "contact": "Business Cooperation: +852 64378432 / +86 13926508390 / +852 64876758"
+    "contact": "Business Cooperation: +852 64378432 / +86 13926508390 / +852 64876758",
+    "business1": "Smart Tower Crane Solution",
+    "business2": "CMP",
+    "business3": "DWSS",
+    "business4": "4S Smart Site System",
+    "business5": "Smart Site Customized Solution"
   },
   "parallaxSection": {
     "slogan": "Empowering Every Evolution of Construction through Engineering Intelligence",
@@ -24,12 +29,7 @@
     "success_submit_again": "Submit Again",
     "wechat": "Contact Us",
     "whatsapp": "WhatsApp: +852 64378432",
-    "business_opportunities": "Business Opportunities",
-    "business1": "Smart Tower Crane Solution",
-    "business2": "CMP",
-    "business3": "DWSS",
-    "business4": "4S Smart Site System",
-    "business5": "Smart Site Customized Solution"
+    "business_opportunities": "Business Opportunities"
   },
   "lite": {
     "toHome": "Learn more about our corporate services",
